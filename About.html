@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <script src="https://kit.fontawesome.com/270c579228.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar container">
+        <h2 class="logo">Aman</h2>
+        <ul class="nav-menu">
+            <li><a href="/projects.html" class="nav-link">Projects</a></li>
+            <li><a href="/About.html" class="nav-link">About</a></li>
+            <li><a href="/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <main class="main-section">
+        <div></div>
+
+        <p>
+            My name is Aman. <b>I am a Frontend Developer.</b>I love creating beautifull, usefull websites. I am always
+            open to learn new
+            technologies. I always try to expand my tech stack. I also have an extra interest in CSS. Playing with
+            CSS is always fun
+            and it has no borders.
+        </p>
+        <h3>Some launguge and tools that use:</h3>
+        <ul>
+            <i class="fa-brands fa-react"></i><br>
+            <i class="fa-brands fa-js"></i>
+            <br>
+            <i class="fa-brands fa-bootstrap"></i>
+            <br>
+            <i class="fa-brands fa-html5"></i> <br>
+            <i class="fa-brands fa-css3"></i> <br>
+            <i class="fa-solid fa-code"></i> <br>
+            <i class="fa-brands fa-github"></i> <br>
+            <!-- <li>React</li>
+            <li>Javascript</li>
+            <li>Boostrap</li>
+            <li>HTML</li>
+            <li>Css</li>
+            <li>SQL</li>
+            <li>GitHub</li> -->
+        </ul>
+        <div></div>
+    </main>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        })
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click"), () => {
+            hamburger.classList.remove("active");
+            hamburger.classList.remove("active");
+        })
+    </script>
+</body>
+
+</html>

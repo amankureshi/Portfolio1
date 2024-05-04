@@ -1,0 +1,249 @@
+ 
+        @import url('https://fonts.googleapis.com/css2?family=Jacquard+24&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            background-color: #F3F3F3;
+        }
+
+        a {
+            color: #101010;
+            text-decoration: none;
+        }
+
+        .navbar {
+            min-height: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 10%;
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 60px;
+            list-style: none;
+        }
+
+        .navbar h2 {
+            color: rgba(252, 136, 43, 0.8);
+            font-size: 2rem;
+            font-family: "Roboto", sans-serif;
+
+        }
+
+        .nav-link {
+            transform: 0.7s ease;
+            font-family: "Roboto", sans-serif;
+            text-decoration: none;
+            color: black;
+            transition: all 0.3s ease 0s;
+            padding: 10px;
+            border-radius: 10px;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .nav-link:hover {
+            color: white;
+            transition: all 0.3s ease 0s;
+            background-color: #0088a9;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+
+        }
+
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            background-color: #0088a9;
+            transition: all 0.3s ease-in-out;
+        }
+
+        @media(max-width:768px) {
+            .hamburger {
+                display: block;
+
+            }
+
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active .bar:nth-child(1) {
+                transform: translateY(8px)rotate(45deg);
+            }
+
+            .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-8px)rotate(-45deg);
+            }
+
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 70px;
+                gap: 2;
+                flex-direction: column;
+                background-color: #f3f3f3;
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                padding: 2rem;
+                border-bottom: 1px solid rgb(201, 197, 197);
+
+            }
+
+            .nav-item {
+                margin: 1rem 0;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+        }
+
+
+        /*<------ Hero-content ------->*/
+
+        .hero-content {
+            /* text-align: center; */
+            padding: 2rem 1rem;
+            max-width: 768px;
+            height: 71vh;
+            /* margin: auto; */
+            padding: 30px 10%;
+        }
+
+        .hero-content h1 {
+            font-size: 7rem;
+            /* font-family: "Titillium Web", sans-serif; */
+            font-weight: 500;
+            font-style: normal;
+            font-family: "Roboto", sans-serif;
+
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            font-family: "Roboto", sans-serif;
+
+        }
+
+        .image-section img {
+            width: 18rem;
+        }
+
+        :root {
+            --background: #005;
+            --primary: #88D5BF;
+            --secondary: #5D6BF8;
+            --third: #e27fcb;
+            --four: #0088a9;
+            --five: #FB9E53;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        main {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .image-section img {
+            background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+            animation: facny 8s ease-in-out infinite;
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            /* height: 320px; */
+            transition: all 1s ease-in-out;
+            z-index: 5;
+            /* width: 100%; */
+            height: 100%;
+            margin: 1.3rem;
+        }
+
+        @keyframes facny {
+            0% {
+                border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+                background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+            }
+
+            25% {
+                border-radius: 60% 40% 30% 70% / 40% 30% 30% 60%;
+                background: linear-gradient(45deg, var(--five) 0%, var(--third) 100%);
+            }
+
+
+            50% {
+                border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+                background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
+            }
+
+            100% {
+                border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+                background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+            }
+        }
+
+
+        main {
+            display: inline-flex;
+        }
+
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-content p {
+                line-height: 3rem;
+                font-size: 1.3rem;
+            }
+
+            main {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            .hero-content {
+                text-align: center;
+            }
+
+            .image-section img {
+                max-width: 11rem;
+            }
+        }
+
+        @media (max-width:500px) {
+            main {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            .hero-content {
+                text-align: center;
+            }
+
+            .image-section img {
+                max-width: 11rem;
+            }
+        }
+    

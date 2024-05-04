@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Kureshi</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=111593&format=png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar container">
+        <h2 class="logo">Aman</h2>
+        <ul class="nav-menu">
+            <li><a href="/projects.html" class="nav-link">Projects</a></li>
+            <li><a href="/About.html" class="nav-link">About</a></li>
+            <li><a href="/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+
+    <main>
+        <div class="hero-content">
+            <h1>I'm Aman</h1>
+            <p>I am a web developer with ambition, passion and good knowledge. I am especially interested in the
+                Frontend/Web
+                Development, HTML, CSS, JS, React.</p>
+        </div>
+        <div class="image-section">
+            <img src="images/aman-bg.png" alt="">
+        </div>
+    </main>
+
+
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        })
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click"), () => {
+            hamburger.classList.remove("active");
+            hamburger.classList.remove("active");
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="projects.css">
+</head>
+
+<body>
+    <nav class="navbar container">
+        <h2 class="logo">Aman</h2>
+        <ul class="nav-menu">
+            <li><a href="/projects.html" class="nav-link">Projects</a></li>
+            <li><a href="/About.html" class="nav-link">About</a></li>
+            <li><a href="/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+
+
+    <!-- Javascript-Projects -->
+
+    <div class="tabs main-btn">
+        <button class="tab active" data-tab="reactTab">Javascript</button>
+        <button class="tab" data-tab="jsTab">Css</button>
+        <button class="tab" data-tab="CssTab">React</button>
+    </div>
+
+    <div id="reactTab" class="tab-content active">
+        <div class="card">
+            <div class="first_card">
+                <h2>Qoute</h2>
+                <img src="https://i.postimg.cc/pdM20m9R/api-photoshop.png" alt="">
+                <a href="https://github.com/amankureshi/Quotes-generator" target="_blank">Source code</a>
+                <a href="https://quotes-generator-vert.vercel.app/" target="_blank">Visit page</a>
+            </div>
+            <div class="first_card">
+                <h2>Jokes</h2>
+                <img src="https://i.postimg.cc/wHwqRvWh/joke.jpg" alt="">
+                <a href="https://github.com/amankureshi/Joke-generator" target="_blank">Source code</a>
+                <a href="https://joke-generator-gilt.vercel.app/" target="_blank">Visit page</a>
+            </div>
+            <div class="first_card">
+                <h2>Calculator</h2>
+                <img src="https://i.postimg.cc/rphqqQnF/calc-copy.png" alt="">
+                <a href="https://github.com/amankureshi/calculator1" target="_blank">Source code</a>
+                <a href="https://calculator1-nine-psi.vercel.app/" target="_blank">Visit page</a>
+            </div>
+            <div class="first_card">
+                <h2>Timer</h2>
+                <img src="https://i.postimg.cc/NGkpFS84/timer.png" alt="">
+                <a href="https://github.com/amankureshi/Timer" target="_blank">Source code</a>
+                <a href="https://amankureshi.github.io/Timer/" target="_blank">Visit page</a>
+            </div>
+            <div class="first_card">
+                <h2>Qoute</h2>
+                <img src="" alt="">
+                <a href="">Source code</a>
+                <a href="">Visit page</a>
+            </div>
+            <div class="first_card">
+                <h2>Qoute</h2>
+                <img src="" alt="">
+                <a href="">Source code</a>
+                <a href="">Visit page</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--=============== Css Project  =============-->
+
+    <div id="jsTab" class="tab-content">
+        <div class="card">
+            <div class="first_card">
+                <h2>Restaurant</h2>
+                <img src="https://i.postimg.cc/m2BP86Ht/restro-originl-copy.png" alt="">
+                <a href="">Source code</a>
+                <a href="">Visit page</a>
+            </div>
+            <div class="first_card">
+                <h2>Paralax</h2>
+                <img src="https://i.postimg.cc/VfVmpbGg/parallax.png" alt="">
+                <a href="https://github.com/amankureshi/paralax" target="_blank">Source code</a>
+                <a href="https://amankureshi.github.io/Parallax/" target="_blank">Visit page</a>
+            </div>
+            <div class="first_card">
+                <h2>My Collage</h2>
+                <img src="https://i.postimg.cc/zJ4c5bK5/bca-collge.png  " alt="">
+                <a href="https://github.com/amankureshi/Npccsm-collage" target="_blank">Source code</a>
+                <a href="https://college-npccsm.vercel.app/" target="_blank">Visit page</a>
+            </div>
+            <div class="first_card">
+                <h2>Music</h2>
+                <img src="https://i.postimg.cc/NFtQZd7j/dj.png" alt="">
+                <a href="https://github.com/amankureshi/music" target="_blank">Source code</a>
+                <a href="https://music-gray-one.vercel.app/" target="_blank">Visit page</a>
+            </div>
+            <div class="first_card">
+                <h2>Job-Application</h2>
+                <img src="https://i.postimg.cc/cCvcycsP/job-app.png" alt="">
+                <a href="https://github.com/amankureshi/Job-application-" target="_blank">Source code</a>
+                <a href="https://amankureshi.github.io/Job-application-/" target="_blank">Visit page</a>
+            </div>
+            <div class="first_card">
+                <h2>Qoute</h2>
+                <img src="https://i.postimg.cc/Mz1dz2f8/music.png" alt="">
+                <a href="">Source code</a>
+                <a href="">Visit page</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="CssTab" class="tab-content">
+        <div class="card">
+
+        </div>
+    </div>
+
+
+    <script>
+        const tabs = document.querySelectorAll('.tab');
+        const tabsContent = document.querySelectorAll('.tab-content')
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabId = tab.getAttribute('data-tab');
+
+                tabs.forEach(t => t.classList.remove('active'))
+                tabsContent.forEach(tc => tc.classList.remove('active'));
+
+                tab.classList.add('active');
+
+                // document.getElementById(tabId).classList.add('active');
+                document.getElementById(tabId).classList.add('active');
+
+            });
+        });
+    </script>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        })
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click"), () => {
+            hamburger.classList.remove("active");
+            hamburger.classList.remove("active");
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://kit.fontawesome.com/270c579228.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="contact.css">
+
+</head>
+
+<body>
+
+
+    <nav class="navbar container">
+        <h2 class="logo">Aman</h2>
+        <ul class="nav-menu">
+            <li><a href="/projects.html" class="nav-link">Projects</a></li>
+            <li><a href="/About.html" class="nav-link">About</a></li>
+            <li><a href="/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <section class="contact-section">
+        <div class="contact-info">
+            <div>
+                <a href="https://www.linkedin.com/in/aman-kureshi-720a832a7/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <div>
+                <a href="https://github.com/amankureshi" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div>
+                <a href="https://codepen.io/amankureshi786" target="_blank"><i class="fa-brands fa-codepen"></i></a>
+            </div>
+            <div>
+                <a href="https://twitter.com/Kureshi_aman786" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+
+        </div>
+    </section>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        })
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click"), () => {
+            hamburger.classList.remove("active");
+            hamburger.classList.remove("active");
+        })
+    </script>
+</body>
+
+</html>
