@@ -224,6 +224,7 @@ main {
     main {
         display: flex;
         flex-direction: column-reverse;
+        margin-top: 4rem;
     }
 
     .hero-content {
