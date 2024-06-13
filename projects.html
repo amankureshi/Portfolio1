@@ -4,16 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Tab Example</title>
     <link rel="stylesheet" href="projects.css">
 </head>
 
 <body>
+
+    <!------------- Navbar --------->
     <nav class="navbar container">
-        <h2 class="logo">Aman</h2>
+        <h2 class="logo"><a href="/index.html">Aman</a></h2>
         <ul class="nav-menu">
-            <li><a href="/projects.html" class="nav-link">Projects</a></li>
+            <li><a href="/projects-updated.html" class="nav-link">Projects</a></li>
             <li><a href="/About.html" class="nav-link">About</a></li>
+            <li><a href="/skills.html" class="nav-link">Skills</a></li>
             <li><a href="/contact.html" class="nav-link">Contact</a></li>
         </ul>
         <div class="hamburger">
@@ -22,129 +25,171 @@
             <span class="bar"></span>
         </div>
     </nav>
+    <!-- navbar-end -->
 
-
-
-    <!-- Javascript-Projects -->
-
-    <div class="tabs main-btn">
-        <button class="tab active" data-tab="reactTab">Javascript</button>
-        <button class="tab" data-tab="jsTab">Css</button>
-        <button class="tab" data-tab="CssTab">React</button>
+    <!---------- Top-tabs -------->
+    <div class="tabs">
+        <button class="tab-btn" onclick="showContent('javascript')">JavaScript</button>
+        <button class="tab-btn" onclick="showContent('css')">CSS</button>
+        <button class="tab-btn" onclick="showContent('react')">React</button>
     </div>
-
-    <div id="reactTab" class="tab-content active">
-        <div class="card">
-            <div class="first_card">
-                <h2>Qoute</h2>
-                <img src="https://i.postimg.cc/pdM20m9R/api-photoshop.png" alt="">
-                <a href="https://github.com/amankureshi/Quotes-generator" target="_blank">Source code</a>
-                <a href="https://quotes-generator-vert.vercel.app/" target="_blank">Visit page</a>
-            </div>
-            <div class="first_card">
-                <h2>Jokes</h2>
-                <img src="https://i.postimg.cc/wHwqRvWh/joke.jpg" alt="">
-                <a href="https://github.com/amankureshi/Joke-generator" target="_blank">Source code</a>
-                <a href="https://joke-generator-gilt.vercel.app/" target="_blank">Visit page</a>
-            </div>
-            <div class="first_card">
-                <h2>Calculator</h2>
-                <img src="https://i.postimg.cc/rphqqQnF/calc-copy.png" alt="">
-                <a href="https://github.com/amankureshi/calculator1" target="_blank">Source code</a>
-                <a href="https://calculator1-nine-psi.vercel.app/" target="_blank">Visit page</a>
-            </div>
-            <div class="first_card">
-                <h2>Timer</h2>
-                <img src="https://i.postimg.cc/NGkpFS84/timer.png" alt="">
-                <a href="https://github.com/amankureshi/Timer" target="_blank">Source code</a>
-                <a href="https://amankureshi.github.io/Timer/" target="_blank">Visit page</a>
-            </div>
-            <div class="first_card">
-                <h2>Clock</h2>
-                <img src="https://i.postimg.cc/P5yz6kDt/clock.png" alt="">
-                <a href="https://github.com/amankureshi/Clock" target="_blank">Source code</a>
-                <a href="https://clock-analog.vercel.app/" target="_blank">Visit page</a>
-            </div>
-            <div class="first_card">
-                <h2>Qoute</h2>
-                <img src="" alt="">
-                <a href="">Source code</a>
-                <a href="">Visit page</a>
-            </div>
+    <main>
+        <div class="content-container" id="content-container">
         </div>
-    </div>
-
-
-    <!--=============== Css Project  =============-->
-
-    <div id="jsTab" class="tab-content">
-        <div class="card">
-            <div class="first_card">
-                <h2>Restaurant</h2>
-                <img src="https://i.postimg.cc/m2BP86Ht/restro-originl-copy.png" alt="">
-                <a href="">Source code</a>
-                <a href="">Visit page</a>
-            </div>
-            <div class="first_card">
-                <h2>Paralax</h2>
-                <img src="https://i.postimg.cc/VfVmpbGg/parallax.png" alt="">
-                <a href="https://github.com/amankureshi/paralax" target="_blank">Source code</a>
-                <a href="https://amankureshi.github.io/Parallax/" target="_blank">Visit page</a>
-            </div>
-            <div class="first_card">
-                <h2>My Collage</h2>
-                <img src="https://i.postimg.cc/zJ4c5bK5/bca-collge.png  " alt="">
-                <a href="https://github.com/amankureshi/Npccsm-collage" target="_blank">Source code</a>
-                <a href="https://college-npccsm.vercel.app/" target="_blank">Visit page</a>
-            </div>
-            <div class="first_card">
-                <h2>Music</h2>
-                <img src="https://i.postimg.cc/NFtQZd7j/dj.png" alt="">
-                <a href="https://github.com/amankureshi/music" target="_blank">Source code</a>
-                <a href="https://music-gray-one.vercel.app/" target="_blank">Visit page</a>
-            </div>
-            <div class="first_card">
-                <h2>Job-Application</h2>
-                <img src="https://i.postimg.cc/cCvcycsP/job-app.png" alt="">
-                <a href="https://github.com/amankureshi/Job-application-" target="_blank">Source code</a>
-                <a href="https://amankureshi.github.io/Job-application-/" target="_blank">Visit page</a>
-            </div>
-            <div class="first_card">
-                <h2>Qoute</h2>
-                <img src="https://i.postimg.cc/Mz1dz2f8/music.png" alt="">
-                <a href="">Source code</a>
-                <a href="">Visit page</a>
-            </div>
-        </div>
-    </div>
-
-    <div id="CssTab" class="tab-content">
-        <div class="card">
-
-        </div>
-    </div>
-
+    </main>
 
     <script>
-        const tabs = document.querySelectorAll('.tab');
-        const tabsContent = document.querySelectorAll('.tab-content')
+        document.addEventListener("DOMContentLoaded", function () {
+            // Show JavaScript content by default
+            showContent('javascript');
 
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                const tabId = tab.getAttribute('data-tab');
-
-                tabs.forEach(t => t.classList.remove('active'))
-                tabsContent.forEach(tc => tc.classList.remove('active'));
-
-                tab.classList.add('active');
-
-                // document.getElementById(tabId).classList.add('active');
-                document.getElementById(tabId).classList.add('active');
-
-            });
+            // Add 'active-tab' class to the JavaScript tab button by default
+            var javascriptTabBtn = document.querySelector('[onclick="showContent(\'javascript\')"]');
+            javascriptTabBtn.classList.add('active-tab');
         });
-    </script>
 
+        const content = {
+            'javascript': [
+
+                {
+                    title: "Qoute",
+                    imageSrc: "https://i.postimg.cc/cJL0R1v6/api-photoshop.png",
+                    sourceCodeLink: "https://github.com/amankureshi/Quotes-generator",
+                    visitPageLink: "https://quotes-generator-vert.vercel.app/"
+                },
+                {
+                    title: "Jokes",
+                    imageSrc: "https://i.postimg.cc/hPXDwtsm/joke.jpg",
+                    sourceCodeLink: "https://github.com/amankureshi/Joke-generator",
+                    visitPageLink: "https://joke-generator-gilt.vercel.app/"
+                },
+                {
+                    title: "Timer",
+                    imageSrc: "https://i.postimg.cc/FNH739yN/timer.png",
+                    sourceCodeLink: "https://github.com/amankureshi/Timer",
+                    visitPageLink: "https://amankureshi.github.io/Timer/"
+                },
+                {
+                    title: "Calculator",
+                    imageSrc: "https://i.postimg.cc/Y0nSF43r/calc.png",
+                    sourceCodeLink: "https://github.com/amankureshi/calculator1",
+                    visitPageLink: "https://calculator1-nine-psi.vercel.app/"
+                },
+                {
+                    title: "Form",
+                    imageSrc: "https://i.postimg.cc/FHsHrPhR/form.png",
+                    sourceCodeLink: "https://github.com/amankureshi/Form-validation",
+                    visitPageLink: "https://form-v.vercel.app/"
+                },
+                {
+                    title: "Music-app",
+                    imageSrc: "https://i.postimg.cc/XYFVj1T7/music-app.png",
+                    sourceCodeLink: "https://github.com/amankureshi/Music-Player-App",
+                    visitPageLink: "https://song-anywhere.vercel.app/"
+                },
+            ],
+            'css': [
+                {
+                    title: "Restaurant",
+                    imageSrc: "https://i.postimg.cc/sDGsjf8R/ww.png",
+                    sourceCodeLink: "https://github.com/amankureshi/Restaurant-website",
+                    visitPageLink: "https://restaurant01.vercel.app/"
+                },
+                {
+                    title: "Paralax",
+                    imageSrc: "https://i.postimg.cc/RhcRVBQL/parallax.png",
+                    sourceCodeLink: "https://github.com/amankureshi/paralax",
+                    visitPageLink: "https://amankureshi.github.io/Parallax/"
+                }, {
+                    title: "My Collage",
+                    imageSrc: "https://i.postimg.cc/1Rp12Nhb/bca-collge.png",
+                    sourceCodeLink: "https://github.com/amankureshi/Npccsm-collage",
+                    visitPageLink: "https://college-npccsm.vercel.app/"
+                },
+                {
+                    title: "Music B5",
+                    imageSrc: "https://i.postimg.cc/rFNJBqp8/dj.png",
+                    sourceCodeLink: "https://github.com/amankureshi/Timer",
+                    visitPageLink: "https://amankureshi.github.io/Timer/"
+                },
+                {
+                    title: "Appe-Music",
+                    imageSrc: "https://i.postimg.cc/8Tw4wk34/music.png",
+                    sourceCodeLink: "https://github.com/amankureshi/Timer",
+                    visitPageLink: "https://amankureshi.github.io/Timer/"
+                },
+                {
+                    title: "Job-Application",
+                    imageSrc: "https://i.postimg.cc/zfsKLQft/job-app.png",
+                    sourceCodeLink: "https://github.com/amankureshi/Music-2021",
+                    visitPageLink: "https://music-2021.vercel.app/"
+                }
+            ],
+            'react': [
+                {
+                    title: "Restro",
+                    imageSrc: "https://i.postimg.cc/pdM20m9R/api-photoshop.png",
+                    sourceCodeLink: "https://github.com/amankureshi/Quotes-generator",
+                    visitPageLink: "https://quotes-generator-vert.vercel.app/"
+                },
+                {
+                    title: "Paralax",
+                    imageSrc: "https://i.postimg.cc/NGkpFS84/timer.png",
+                    sourceCodeLink: "https://github.com/amankureshi/Timer",
+                    visitPageLink: "https://amankureshi.github.io/Timer/"
+                }
+            ]
+        };
+
+        function showContent(tabName) {
+            // Remove 'active-tab' class from all tab buttons
+            var tabBtns = document.querySelectorAll('.tab-btn');
+            tabBtns.forEach(btn => {
+                btn.classList.remove('active-tab');
+            });
+
+            // Add 'active-tab' class to the clicked tab button
+            var clickedTabBtn = document.querySelector('[onclick="showContent(\'' + tabName + '\')"]');
+            clickedTabBtn.classList.add('active-tab');
+
+            var contentContainer = document.getElementById('content-container');
+            contentContainer.innerHTML = ''; // Clear previous content
+
+            content[tabName].forEach(item => {
+                var card = document.createElement('div');
+                card.classList.add('content', 'card');
+
+                var image = document.createElement('img');
+                image.src = item.imageSrc;
+                image.alt = item.title + " Image";
+
+                var title = document.createElement('h2');
+                console.log(title);
+                title.textContent = item.title;
+
+                var sourceCodeBtn = document.createElement('a');
+                sourceCodeBtn.classList.add('btn');
+                sourceCodeBtn.textContent = 'Source Code';
+                sourceCodeBtn.href = item.sourceCodeLink;
+                sourceCodeBtn.target = '_blank'; // Open link in new tab
+
+                var visitPageBtn = document.createElement('a');
+                visitPageBtn.classList.add('btn');
+                visitPageBtn.textContent = 'Visit Page';
+                visitPageBtn.href = item.visitPageLink;
+                visitPageBtn.target = '_blank'; // Open link in new tab
+
+                card.appendChild(title);
+                card.appendChild(image);
+                card.appendChild(sourceCodeBtn);
+                card.appendChild(visitPageBtn);
+
+                contentContainer.appendChild(card);
+            });
+        }
+
+
+    </script>
     <script>
         const hamburger = document.querySelector(".hamburger");
         const navMenu = document.querySelector(".nav-menu");
