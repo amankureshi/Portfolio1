@@ -271,6 +271,7 @@ main {
 
     .hero-content {
         text-align: center;
+        line-height: 3rem;
     }
 
     .image-section img {
