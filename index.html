@@ -12,8 +12,16 @@
 
 <body>
 
-    <!----------- Navbar ----------->
+    <!----------- Preloader -------->
 
+    <div id="preloader">
+        <img src="images/pre-loader.gif" alt="">
+    </div>
+
+    <div id="loader">
+    </div>
+
+    <!----------- Navbar ----------->
     <nav class="navbar container">
         <h2 class="logo"><a href="">Aman</a></h2>
         <ul class="nav-menu">
@@ -29,6 +37,7 @@
         </div>
     </nav>
 
+    <!---------- Main-section ------->
 
     <main>
         <div class=" hero-content ">
@@ -62,6 +71,22 @@
             hamburger.classList.remove("active");
         })
     </script>
+
+
+    <!----------- Preloader-script ------------>
+
+    <script>
+        window.addEventListener('load', function () {
+            // Ensure the entire page has loaded
+            setTimeout(function () {
+                document.getElementById('preloader').style.display = 'none';
+                document.getElementById('loader').style.display = 'block';
+                document.body.style.overflow = 'auto'; // Enable scrolling
+            }, 5000);
+        });
+
+    </script>
+
 </body>
 
 </html>
