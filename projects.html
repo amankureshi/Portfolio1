@@ -38,6 +38,7 @@
         </div>
     </main>
 
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Show JavaScript content by default
@@ -94,6 +95,14 @@
                     sourceCodeLink: "https://github.com/amankureshi/Color-changer",
                     visitPageLink: "https://color-changer01.vercel.app/"
                 }
+                ,
+                {
+                    title: "Clock",
+                    imageSrc: "https://i.postimg.cc/Pds35Xr8/clock.png",
+                    sourceCodeLink: "https://github.com/amankureshi/Clock",
+                    visitPageLink: "https://clock-analog.vercel.app/"
+                }
+
             ],
             'css': [
                 {
@@ -130,6 +139,13 @@
                     imageSrc: "https://i.postimg.cc/zfsKLQft/job-app.png",
                     sourceCodeLink: "https://github.com/amankureshi/Music-2021",
                     visitPageLink: "https://music-2021.vercel.app/"
+                },
+                ,
+                {
+                    title: "Avatar-Clone",
+                    imageSrc: "https://i.postimg.cc/7PTVLBQt/Avtar.jpg",
+                    sourceCodeLink: "https://github.com/amankureshi/Avatar-clone",
+                    visitPageLink: "https://avatar-clone.vercel.app/"
                 }
             ],
             'react': [
@@ -167,8 +183,17 @@
                 card.classList.add('content', 'card');
 
                 var image = document.createElement('img');
-                image.src = item.imageSrc;
-                image.alt = item.title + " Image";
+                const loaderImageURL = 'https://i.giphy.com/swhRkVYLJDrCE.webp';
+                image.src = loaderImageURL; // Set a loader image 
+
+                // Set a Image source when it loads
+                var actualImage = new Image();
+                actualImage.src = item.imageSrc;
+                actualImage.onload = function () {
+                    image.src = item.imageSrc;
+                };
+
+
 
                 var title = document.createElement('h2');
                 console.log(title);
