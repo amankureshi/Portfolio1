@@ -48,7 +48,7 @@ a {
     color: black;
     transition: all 0.3s ease 0s;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 4px;
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     font-weight: 500;

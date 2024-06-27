@@ -10,7 +10,8 @@
 }
 
 body {
-    background-color: #f3f3f3;
+    /* background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%); */
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
     min-height: 100vh;
 }
 
@@ -50,7 +51,7 @@ a {
     color: black;
     transition: all 0.3s ease 0s;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 4px;
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     font-weight: 500;
@@ -135,7 +136,6 @@ a {
 .hero-content {
     /* padding: 2rem 1rem; */
     max-width: 768px;
-    height: 60vh;
 }
 
 .hero-content h1 {
@@ -168,17 +168,16 @@ a {
 
 
 main {
+    justify-content: center;
     align-items: center;
     display: flex;
-    justify-content: space-between;
-    padding: 0rem 12%;
+    gap: 5rem;
 }
 
 .image-section img {
     background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
     animation: facny 8s ease-in-out infinite;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    /* height: 320px; */
     transition: all 1s ease-in-out;
     z-index: 5;
     height: 100%;
@@ -299,7 +298,7 @@ main {
     position: absolute;
     width: calc(100% + 8px);
     height: 100%;
-    background-color: #f3f3f3;
+    background: #E8EFF6;
     border-left: 4px solid #fb9e53;
     right: -8px;
     animation: cursor .8s infinite, typing 20s steps(10)infinite;
