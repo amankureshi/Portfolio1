@@ -163,6 +163,8 @@ a {
 .col img {
     object-fit: cover;
     width: 7.5rem;
+    aspect-ratio: 4/4;
+    
 }
 
 .icon {
